@@ -3,80 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildberries Рулетка — Выиграй до 15 000 000 ₽</title>
+    <title>Wildberries Рулетка — Выиграй 15 000 000 ₽</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1a0033, #2d004d);
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e0033, #3a0055);
             color: white;
             text-align: center;
             min-height: 100vh;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 900px;
+            max-width: 960px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 15px;
         }
         .wb-logo {
             background: #e60012;
             color: white;
-            padding: 8px 20px;
+            padding: 6px 18px;
             border-radius: 50px;
+            font-weight: 700;
             display: inline-block;
-            font-weight: bold;
-            margin: 20px 0;
+            font-size: 18px;
+            margin: 15px 0 10px;
         }
         h1 {
-            font-size: 42px;
-            margin: 15px 0;
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            font-size: 48px;
+            font-weight: 700;
+            margin: 10px 0 5px;
+            text-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
         }
         .subtitle {
-            font-size: 22px;
+            font-size: 24px;
             color: #ffd700;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
-        .prize-box {
-            background: linear-gradient(90deg, #9c27b0, #ff00ff);
+        .main-prize {
+            background: linear-gradient(90deg, #9c27b0, #ff0088);
             border-radius: 20px;
-            padding: 30px;
+            padding: 35px 20px;
             margin: 30px auto;
-            max-width: 700px;
-            box-shadow: 0 0 40px rgba(156, 39, 176, 0.8);
+            box-shadow: 0 0 50px rgba(156, 39, 176, 0.9);
         }
-        .prize {
-            font-size: 52px;
-            font-weight: bold;
+        .prize-amount {
+            font-size: 62px;
+            font-weight: 700;
             color: #ffd700;
+            text-shadow: 0 0 20px black;
+        }
+        .info-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 35px 0;
+        }
+        .box {
+            background: rgba(255,255,255,0.08);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 20px 25px;
+            width: 280px;
         }
         .btn {
-            background: linear-gradient(90deg, #ff00ff, #e60012);
+            background: linear-gradient(90deg, #ff00aa, #e60012);
             color: white;
-            padding: 18px 50px;
-            font-size: 24px;
+            padding: 18px 55px;
+            font-size: 26px;
+            font-weight: 700;
             border: none;
             border-radius: 50px;
             cursor: pointer;
             margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(255, 0, 255, 0.6);
-            transition: 0.3s;
+            box-shadow: 0 15px 35px rgba(255, 0, 170, 0.5);
+            transition: all 0.3s;
         }
         .btn:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px) scale(1.05);
         }
         .steps {
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 16px;
             padding: 25px;
-            margin: 30px auto;
             max-width: 700px;
+            margin: 30px auto;
         }
-        ol {
-            text-align: left;
-            display: inline-block;
-            font-size: 19px;
+        footer {
+            margin-top: 50px;
+            opacity: 0.8;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -85,32 +106,47 @@
         <div class="wb-logo">WB</div>
         
         <h1>WILDBERRIES</h1>
-        <h1 style="margin-top:-15px;">РУЛЕТКА</h1>
+        <h1 style="margin-top: -20px;">РУЛЕТКА</h1>
         <p class="subtitle">ФОРТУНА УЛЫБАЕТСЯ ТЕБЕ!</p>
 
-        <div class="prize-box">
-            <p style="margin:0; font-size:18px;">ГЛАВНЫЙ ПРИЗ</p>
-            <p class="prize">15 000 000 ₽</p>
-            <p style="margin:10px 0 0;">на ваш счёт Wildberries</p>
+        <div class="main-prize">
+            <p style="margin:0; font-size:19px; font-weight:600;">ГЛАВНЫЙ ПРИЗ</p>
+            <p class="prize-amount">15 000 000 ₽</p>
+            <p style="margin:10px 0 0; font-size:20px;">на ваш счёт Wildberries</p>
         </div>
 
-        <div class="steps">
-            <h2>Как участвовать:</h2>
-            <ol>
-                <li>Нажми кнопку ниже</li>
-                <li>Авторизуйся через VK</li>
-                <li>Крути рулетку и забирай приз</li>
-            </ol>
+        <div class="info-boxes">
+            <div class="box">
+                <strong>КАЖДЫЙ ДЕНЬ</strong><br>
+                <span style="font-size:28px; color:#ffd700;">1 ШАНС</span><br>
+                на джекпот<br>БЕСПЛАТНО
+            </div>
+            <div class="box">
+                <strong>ДРУГИЕ ПРИЗЫ</strong><br>
+                <span style="font-size:26px; color:#ffd700;">100 — 50 000 ₽</span><br>
+                на счёт или скидки<br>до 90% на товары
+            </div>
+            <div class="box">
+                <strong>КАК УЧАСТВОВАТЬ</strong><br>
+                1. Зайди на сайт<br>
+                2. Найди «Рулетку»<br>
+                3. Крути и выигрывай!
+            </div>
         </div>
 
         <button class="btn" onclick="goToOffer()">
-            КРУТИ РУЛЕТКУ ПРЯМО СЕЙЧАС →
+            КРУТИ ПРЯМО СЕЙЧАС →
         </button>
 
-        <p style="margin-top:40px; opacity:0.9;">
-            Акция действует: <strong>28.04.26 — 10.05.26</strong><br>
-            Только для пользователей из РФ • 18+
-        </p>
+        <div class="steps">
+            <strong>Акция действует:</strong> 28.04.26 — 10.05.26<br>
+            Участники: 18+ • РФ
+        </div>
+
+        <footer>
+            Акция с 28.04.26 по 10.05.26 • 18+<br>
+            wildberries.ru • Участие бесплатное
+        </footer>
     </div>
 
     <script>
@@ -118,10 +154,8 @@
             window.location.href = "https://твоя-партнерка.ru/offer?sub=wb_ruletka";
         }
 
-        // Авторедирект через 7 секунд
-        setTimeout(() => {
-            window.location.href = "https://твоя-партнерка.ru/offer?sub=wb_ruletka";
-        }, 7000);
+        // Авторедирект через 8 секунд
+        setTimeout(goToOffer, 8000);
     </script>
 </body>
 </html>
