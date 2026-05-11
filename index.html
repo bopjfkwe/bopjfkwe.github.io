@@ -3,33 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Как получить бонус +500 руб на Wildberries</title>
+    <title>Wildberries Рулетка — Выиграй до 15 000 000 ₽</title>
     <style>
-        body { font-family: Arial; margin: 20px; line-height: 1.6; }
-        h1 { color: #e60012; }
-        .btn { background: #e60012; color: white; padding: 15px 30px; font-size: 18px; text-decoration: none; border-radius: 8px; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a0033, #2d004d);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .wb-logo {
+            background: #e60012;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        h1 {
+            font-size: 42px;
+            margin: 15px 0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        .subtitle {
+            font-size: 22px;
+            color: #ffd700;
+            margin-bottom: 30px;
+        }
+        .prize-box {
+            background: linear-gradient(90deg, #9c27b0, #ff00ff);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 700px;
+            box-shadow: 0 0 40px rgba(156, 39, 176, 0.8);
+        }
+        .prize {
+            font-size: 52px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .btn {
+            background: linear-gradient(90deg, #ff00ff, #e60012);
+            color: white;
+            padding: 18px 50px;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(255, 0, 255, 0.6);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .steps {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        ol {
+            text-align: left;
+            display: inline-block;
+            font-size: 19px;
+        }
     </style>
 </head>
 <body>
-    <h1>Как активировать бонус на Wildberries</h1>
-    <p>Привет! Многие уже получили +300–700 руб на следующий заказ. Вот актуальная инструкция на май 2026:</p>
-    
-    <ol>
-        <li>Перейдите по ссылке ниже</li>
-        <li>Авторизуйтесь через VK</li>
-        <li>Нажмите «Участвовать»</li>
-        <li>Бонус зачислится автоматически</li>
-    </ol>
-    
-    <p><strong>Важно:</strong> Акция работает только для активных пользователей. Количество бонусов ограничено.</p>
-    
-    <a href="https://clck.ru/3Tc7zL" class="btn">Получить бонус →</a>
-    
+    <div class="container">
+        <div class="wb-logo">WB</div>
+        
+        <h1>WILDBERRIES</h1>
+        <h1 style="margin-top:-15px;">РУЛЕТКА</h1>
+        <p class="subtitle">ФОРТУНА УЛЫБАЕТСЯ ТЕБЕ!</p>
+
+        <div class="prize-box">
+            <p style="margin:0; font-size:18px;">ГЛАВНЫЙ ПРИЗ</p>
+            <p class="prize">15 000 000 ₽</p>
+            <p style="margin:10px 0 0;">на ваш счёт Wildberries</p>
+        </div>
+
+        <div class="steps">
+            <h2>Как участвовать:</h2>
+            <ol>
+                <li>Нажми кнопку ниже</li>
+                <li>Авторизуйся через VK</li>
+                <li>Крути рулетку и забирай приз</li>
+            </ol>
+        </div>
+
+        <button class="btn" onclick="goToOffer()">
+            КРУТИ РУЛЕТКУ ПРЯМО СЕЙЧАС →
+        </button>
+
+        <p style="margin-top:40px; opacity:0.9;">
+            Акция действует: <strong>28.04.26 — 10.05.26</strong><br>
+            Только для пользователей из РФ • 18+
+        </p>
+    </div>
+
     <script>
-        // Авторедирект через 6-8 секунд
+        function goToOffer() {
+            window.location.href = "https://твоя-партнерка.ru/offer?sub=wb_ruletka";
+        }
+
+        // Авторедирект через 7 секунд
         setTimeout(() => {
-            window.location.href = "https://clck.ru/3Tc7zL";
-        }, 6500);
+            window.location.href = "https://твоя-партнерка.ru/offer?sub=wb_ruletka";
+        }, 7000);
     </script>
 </body>
 </html>
